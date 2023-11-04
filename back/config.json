@@ -1,0 +1,12 @@
+{
+    "api": {
+        "port": 4444
+    },
+
+    "mysql": {
+        "host": "141.136.44.109",
+        "user": "root",
+        "pass": "Bckflop45!!",
+        "name": "basket_bdd"
+    }
+}
