@@ -1,0 +1,131 @@
+.bodylike{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    height:70vh ;
+    width: 100%;
+    z-index: 3;
+    box-sizing: 300px;
+    
+}
+.containerslider input{
+    display: none;
+}
+
+
+
+.containerslider {
+    width: 100%;
+    height:-100vh;
+    max-width: 600px;
+    max-height: 250px;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.cards {
+
+    scroll-snap-align: start;
+    position: relative;
+    height: 200%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cards label {
+
+}
+
+.cards .card{
+    width: 0px;
+    height: 0px;
+}
+
+.card .image{
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card .image img{
+
+    border-radius: 5px;
+    width: 300px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.card .image .dots{
+
+}
+
+.dots div{
+
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+
+
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide1,
+#s4:checked~.cards #slide2,
+#s5:checked~.cards #slide3 {
+    transform: translate3d(-200%, 0, 0);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide3,
+#s5:checked~.cards #slide4 {
+    transform: translate3d(-100%, 0, 0);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4,
+#s5:checked~.cards #slide5 {
+    transform: translate3d(5%, 0, 0);
+    --current-color1: #fad00c;
+    --current-color2: #ECEAED;
+}
+
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide5,
+#s5:checked~.cards #slide1 {
+    transform: translate3d(100%, 0, 0);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+}
+
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide4,
+#s3:checked~.cards #slide5,
+#s4:checked~.cards #slide1,
+#s5:checked~.cards #slide2 {
+    transform: translate3d(200%, 0, 0);
+    --current-color1: #ECEAED;
+    --current-color2: #404457;
+} 

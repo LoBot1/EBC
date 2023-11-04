@@ -1,0 +1,99 @@
+.content-carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    width: 600px;
+    border-radius: 30px;
+
+}
+
+.carrousel {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: -1.5rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    border-radius: 30px;
+
+    padding: 50px 50px;
+
+}
+
+.carrousel::-webkit-scrollbar {
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 80px;
+    border-radius: 30px ;
+}
+
+.carrousel::-webkit-scrollbar-track {
+    height: 500px;
+}
+
+.carrousel::-webkit-scrollbar-thumb{
+    background-color: rgba(119, 119, 119, 0.342);
+    border-radius: 36px;
+}
+.cardS {
+    margin-left: 15px;
+    scroll-snap-align: start;
+    border-radius: 30px;
+    min-height: 700px;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cardS:nth-child(odd) {
+    background-color: rgb(255, 0, 0);
+}
+
+.cardS:nth-child(even) {
+    background-color: blue;
+}
+
+.P1 {
+    background-image: url(../image/photo\ montage\ 2/D1.JPG);
+    background-size: cover;
+    background-position-x: -200px;
+
+}
+
+.P2 {
+    background-image: url(../image/photo\ montage\ 2/G2.jpeg);
+    background-size: 205%;
+    background-position-x: -200px;
+}
+
+.P3 {
+    background-image: url(../image/photo\ montage\ 2/G3.JPG);
+    background-size: cover;
+    background-position-x: -200px;
+
+}
+
+.P4 {
+    background-image: url(../image/photo\ montage\ 2/D3.jpeg);
+    background-size: cover;
+    background-position-x: -200px;
+
+}
+
+.P5 {
+    background-image: url(../image/photo\ montage\ 2/G1.JPG);
+    background-size: 211%;
+}
+
+.P6 {
+    background-image: url(../image/photo\ montage\ 2/D2.jpeg);
+    background-size: cover;
+    background-position-x: -200px;
+
+}

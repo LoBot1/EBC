@@ -1,0 +1,19 @@
+.Waitingcontent h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.Waitingcontent{
+    height: 100vh;
+    background-image: url(../image/background/backcomputer.png);
+    background-size: cover;
+}
+
+.Waitingcontent .texte{
+    display: flex;
+    height: 100%;
+    margin-left: 20%;
+    align-items: center;
+}
+.blue{
+    text-decoration: underline;
+}
