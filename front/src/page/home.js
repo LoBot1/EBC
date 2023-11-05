@@ -20,9 +20,7 @@ import SliderMain2 from '../components/slidermain2';
 <script src="https://kit.fontawesome.com/bc8591f4e3.js" crossorigin="anonymous"></script>
 
 function Home() {
-
-    ReactSession.set("id", -2);
-    if (ReactSession.get("id") == -2) {
+    if (ReactSession.get("id") ?? null == null) {
         ReactSession.set("id", -1);
         ReactSession.set("first_name", "");
         ReactSession.set("last_name", "");
