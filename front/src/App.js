@@ -35,6 +35,8 @@ import { Waiting } from "./page/WAITINGpage";
 
 export function App() {
   ReactSession.setStoreType("cookie");
+  ReactSession.set("init", 1);
+  
   const [show, setShow] = useState(false);
   const [alerts, setAlerts] = useState();
   const [colors, setColors] = useState();
